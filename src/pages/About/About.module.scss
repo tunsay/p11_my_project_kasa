@@ -1,0 +1,21 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.container{
+    padding: 20px;
+    @include laptop {
+        padding: 1rem 3rem;
+    }
+    @include desktop-med {
+        max-width: 1440px;
+    }
+    .wrapper{
+        display: grid;
+        gap: nth($margins, 3);
+        @include tablet{
+           width: 80%;
+           margin: auto;
+        }
+    }
+    
+}
