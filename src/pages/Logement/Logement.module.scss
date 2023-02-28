@@ -1,0 +1,81 @@
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/mixins.scss';
+
+.container {
+    padding: 20px;
+    @include laptop {
+        padding: 3rem;
+    }
+        @include desktop-med {
+         max-width: 1440px;
+        margin: auto;
+    }
+    .content{
+        @include laptop{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin: nth($margins, 3) 0;
+        }
+    }
+    .title, 
+    .location{
+        color: $primary-color;
+        font-weight: 500;
+        margin: nth($margins, 2) 0;
+        @include laptop{
+            margin: 0;
+        }
+    }
+    .title{
+        line-height: 1.5;
+        @include laptop{
+            line-height: initial;
+        }
+    }
+    .location{
+        @include laptop{
+            margin: .5rem 0 1rem 0;
+        }
+    }
+    .tags_wrapper{
+        display: flex;
+        gap: nth($margins, 2);
+    }
+    .informations{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include laptop{
+            flex-direction: column;
+        }
+        .host{
+            display: flex;
+            align-items: center;
+            gap: nth($margins, 2);
+            @include laptop{
+                margin-bottom: 1.5rem;
+            }
+            .name{
+                color: $primary-color;
+                font-weight: 500;
+                text-align: right;
+                width: 100px;
+            }
+            .picture{
+                border-radius: nth($radius, 3);
+                width: 45px;
+            }
+        }
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: nth($margins, 3);
+        @include laptop{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }
+}
