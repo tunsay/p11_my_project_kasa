@@ -1,0 +1,21 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.host{
+    display: flex;
+    align-items: center;
+    gap: nth($margins, 2);
+    @include laptop{
+        margin-bottom: 1.5rem;
+    }
+    .name{
+        color: $primary-color;
+        font-weight: 500;
+        text-align: right;
+        width: 100px;
+    }
+    .picture{
+        border-radius: nth($radius, 3);
+        width: 45px;
+    }
+}
