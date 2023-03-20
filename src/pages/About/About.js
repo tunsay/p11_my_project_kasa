@@ -2,8 +2,8 @@ import styles from './About.module.scss'
 import aboutBanner from '../../assets/images/about_image.png'
 import Banner from '../../components/Banner/Banner'
 import Collapse from '../../components/Collapse/Collapse'
-import aboutContent from '../../datas/about'
 import { useEffect } from 'react'
+import aboutContent from '../../datas/about'
 
 function About() {
   useEffect(() => {
@@ -16,8 +16,8 @@ function About() {
         {aboutContent.map((content, index) => (
           <Collapse
             key={index}
-            content={content.description}
             title={content.title}
+            content={content.description}
           />
         ))}
       </div>
