@@ -27,14 +27,14 @@
     .navItem{
         transition: all .5s ease;
         .navLink{
+            position: relative;
+            display: flex;
+            text-decoration: none;
             color: $primary-color;
-            text-transform: uppercase;
             font-weight: 500;
             margin: 0 10px;
-            text-decoration: none;
             font-size: 12px;
-            display: inline-block;
-            position: relative;
+            text-transform: uppercase;
             @include laptop{
                 text-transform: initial;
                 font-size: 24px;
