@@ -4,7 +4,7 @@ function Banner(props) {
   return (
     <div className={styles.banner}>
       <img src={props.image} alt="banner" className={styles.bannerImage} />
-      <div className={styles.overlay}></div>
+      <div className={styles.headerLayout}></div>
       <h1 className={styles.title}>{props.title}</h1>
     </div>
   )

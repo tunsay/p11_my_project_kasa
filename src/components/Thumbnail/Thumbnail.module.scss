@@ -1,0 +1,39 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.thumbnailLogement{
+    display: flex;
+    width: 100%;
+    height: 340px;
+    border-radius: nth($radius, 1);
+    position: relative;
+    text-decoration: none;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease;
+    @include laptop{
+        aspect-ratio: 1 / 1;
+        height: initial;
+        width: initial;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 35px rgba(133, 133, 133, 0.418);
+        }
+    }
+    .title{
+        color: white;
+        position: relative;
+        z-index: 2;
+        padding: nth($margins, 2);
+        font-weight: 500;
+    }
+    .overlay{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: nth($radius, 1);
+        z-index: 1;
+    }
+}

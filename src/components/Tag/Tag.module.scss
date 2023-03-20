@@ -1,0 +1,11 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.tag{
+    background: $primary-color;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: nth($radius, 1);
+    text-align: center;
+    font-size: 14px;
+}

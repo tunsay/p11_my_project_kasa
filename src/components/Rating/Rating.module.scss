@@ -1,0 +1,15 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.wrapper {
+    margin: nth($margins, 1);
+    gap: 6px;
+    display: flex;
+    @include laptop {
+        order: 1;
+        margin: 0;
+    }
+    .icon{
+        width: 25px;
+    }
+}
