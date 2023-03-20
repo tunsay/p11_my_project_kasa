@@ -18,6 +18,7 @@ function Collapse(props) {
           `${styles.textWrapper}` + (isOpen ? ` ${styles.isOpen}` : '')
         }
       >
+        {/* est-ce que c'est un tableau ? Si oui: */}
         {Array.isArray(props.content) ? (
           <ul className={styles.description}>
             {props.content.map((equipement) => (
@@ -25,6 +26,7 @@ function Collapse(props) {
             ))}
           </ul>
         ) : (
+          // Sinon met un texte traditionnel
           <p className={styles.description}> {props.content} </p>
         )}
       </div>
