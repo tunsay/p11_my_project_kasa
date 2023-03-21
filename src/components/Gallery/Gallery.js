@@ -31,6 +31,9 @@ function Gallery({ pictures, title }) {
             <img src={iconNext} alt="" className={styles.icon} />
           </button>
         )}
+        <div className={styles.indexPicture}>
+          {galleryIndex + 1}/{pictures.length}
+        </div>
       </div>
       <img
         src={pictures[galleryIndex]}
