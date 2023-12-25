@@ -10,7 +10,7 @@ const logements = require('../../datas/logements.json')
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/p11_my_project_kasa">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
