@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/p11_my_project_kasa/static/css/main.ccd25c13.css",
+    "main.js": "/p11_my_project_kasa/static/js/main.7760bf56.js",
+    "static/media/home.png": "/p11_my_project_kasa/static/media/home.bd29b9024d8a24212408.png",
+    "static/media/about_image.png": "/p11_my_project_kasa/static/media/about_image.97d3a7a60f0eec9e3d57.png",
+    "static/media/logo.svg": "/p11_my_project_kasa/static/media/logo.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "index.html": "/p11_my_project_kasa/index.html",
+    "static/media/icon_next.svg": "/p11_my_project_kasa/static/media/icon_next.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/icon_prev.svg": "/p11_my_project_kasa/static/media/icon_prev.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "static/media/star_empty.svg": "/p11_my_project_kasa/static/media/star_empty.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/star_full.svg": "/p11_my_project_kasa/static/media/star_full.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.ccd25c13.css.map": "/p11_my_project_kasa/static/css/main.ccd25c13.css.map",
+    "main.7760bf56.js.map": "/p11_my_project_kasa/static/js/main.7760bf56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccd25c13.css",
+    "static/js/main.7760bf56.js"
+  ]
+}
